@@ -16,14 +16,14 @@ import OpenInWindowIcon from "../Icons/OpenInWindowIcon.vue";
     <!--  -->
     <div class="flex flex-col gap-2 py-4 px-3">
       <a
-        href="/"
+        href="mailto:adanayaztracer@gmail.com"
         class="flex gap-1 items-start text-[#607B96] px-1 hover:text-white transition-all duration-400"
       >
         <EmailIconVue class="mt-1" />
-        muhammadking09<br />@gmail.com
+        adanayaztracer<br />@gmail.com
       </a>
       <a
-        href="/"
+        href="tel:+923256823910"
         class="flex gap-1 items-start text-[#607B96] px-1 hover:text-white transition-all duration-400"
       >
         <PhoneIcon />
