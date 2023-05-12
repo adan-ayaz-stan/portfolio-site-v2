@@ -1,0 +1,65 @@
+const data = [
+  {
+    folderName: "interests",
+    folderColor: "#E99287",
+    files: [
+      {
+        fileName: "music",
+        fileContent: [
+          "/**",
+          "I have a diverse taste in music and enjoy exploring various genres and artists.",
+          "",
+          "Classical: Ludovico Einaudi",
+          "",
+          "Upbeat: Alan Walker, Tungevaag, KSHMR, Neoni and induvidual songs by artists all over the internet",
+          "",
+          "I also like ones with soothing and silent theme. A crude example would be 'Pluers du soir' performed by Nuit Incolore.",
+          "",
+          "Exploring different artists and genres is my hobby and I continously change my tastes as I grow up.",
+          "*/",
+        ],
+      },
+      {
+        fileName: "gaming",
+        fileContent: [
+          "Gaming is a passion of mine, and I find immense enjoyment in exploring virtual worlds and engaging in exciting gameplay.",
+          "",
+          "War Thunder has become a game I keep coming back to, as its immersive mechanics and thrilling combat never fail to captivate me.",
+          "",
+          "Beyond War Thunder, I have delved into a variety of gaming experiences.",
+          "",
+          "Titles like Far Cry 2, GTA 5 Online, Valorant, CSGO, F1 Racing, NFS, IGI, COD series till MW3, and Battlefield 1942 have all left a lasting impact on my gaming journey.",
+          "",
+          "",
+          "I tell you what, gaming is one great goddamn emotional support. Especially when you have no .... You get what I'm tryna say, really",
+          "",
+          "As a passionate gamer, I am always eager to discover new titles and embrace the ever-evolving world of gaming but damn, I can't even upgrade from an i3 530, lol.",
+        ],
+      },
+      {
+        fileName: "lightnovels",
+        fileContent: [
+          "I am an avid fan and reader of mangas and manhwas and I read light novels too when a manhwa or manga interests me too much.",
+          "",
+          "I read separate light novels as well.",
+          "An awesome recommendation from me would be Shadow Slave. Damn, this piece has kept me captivated every moment of the journey. It's awesome. Do check it out!",
+          "",
+          "The Villain Wants to Live is another great one. This was good too. It's got a great mixture of romance, action, suspense, and mystery. MC is a chad in it.",
+          "",
+          "I watch specific animes too, like DBZ, Eminence in the Shadow, MHA, Vinland Saga, and ugh.. I can't remember the others. But trust me, great pieces always come along!",
+          "",
+          "And hey, you don't need to be a femboy or a beta male to watch them. You can be a grown old man and still enjoy them, haha.",
+          "",
+          "Oh, I almost forgot! A great manhwa recommendation is The Great State Developer. That piece is funny as the reflection in the screen!",
+          "",
+          "And don't miss out on Nan Hao and Shan Feng. It's pure gold, my friend.",
+          "",
+          "",
+          "Well, that's about it, I guess.",
+        ],
+      },
+    ],
+  },
+];
+
+export default data;

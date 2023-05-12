@@ -1,0 +1,124 @@
+<script setup>
+import { ref } from "vue";
+import CommentIcon from "../../Icons/CommentIcon.vue";
+import StarIcon from "../../Icons/StarIcon.vue";
+
+import { PrismEditor } from "vue-prism-editor";
+import "vue-prism-editor/dist/prismeditor.min.css";
+import { highlight, languages } from "prismjs/components/prism-core";
+import "prismjs/components/prism-clike";
+import "prismjs/components/prism-javascript";
+import "prismjs/themes/prism-coldark-dark.css";
+
+const { index, codeText, details, scrollOnOpen } = defineProps([
+  "index",
+  "codeText",
+  "details",
+  "scrollOnOpen",
+]);
+
+const codeState = ref(codeText);
+
+const detailsOpen = ref(false);
+const detailBoxRef = ref(null);
+
+const flashTextState = ref(false);
+
+function flashText() {
+  flashTextState.value = true;
+  setTimeout(() => {
+    flashTextState.value = false;
+  }, 500);
+}
+
+function toggleDetails() {
+  detailsOpen.value = !detailsOpen.value;
+
+  if (detailsOpen.value == true) {
+    scrollOnOpen(detailBoxRef, index);
+    flashText();
+  }
+}
+
+const code = ref(`
+const button = document.querySelector('#sendBtn');
+
+const message = {
+    name: "",
+    email: "",
+    message: "",
+    date: ""
+}
+
+button.addEventListener('click', () => {
+    form.send(message);
+})
+`);
+
+let highlighter = (code) => {
+  return highlight(code, languages.js);
+};
+
+const components = {
+  PrismEditor,
+};
+</script>
+
+<template>
+  <div class="flex flex-col gap-8 mx-12">
+    <!-- Top Bar -->
+    <div class="flex flex-row justify-between items-end mt-12">
+      <div class="flex flex-row gap-3 items-end">
+        <img
+          src="https://i.ibb.co/N62Vx41/IMG-20230109-183541.jpg"
+          alt="profile-icon"
+          class="h-16 w-16 rounded-full border-2 object-cover"
+        />
+        <div>
+          <a
+            href="https://github.com/adan-ayaz-stan"
+            class="font-bold text-[#5565E8]"
+            >@adan-ayaz-stan</a
+          >
+          <p class="text-[#607B96]">Created a few months ago</p>
+        </div>
+      </div>
+      <div class="flex flex-row gap-6 text-[#607B96]">
+        <button
+          @click="toggleDetails"
+          :style="{ color: detailsOpen ? 'white' : '' }"
+          class="group flex flex-row items-center transition-all duration-400"
+        >
+          <CommentIcon class="inline mr-2" />
+          <span class="group-hover:underline">details </span>
+        </button>
+        <span class="flex flex-row items-center"
+          ><StarIcon class="inline mr-1" />
+          <span class="pt-1">star</span>
+        </span>
+      </div>
+    </div>
+
+    <!-- Code Section -->
+    <prism-editor
+      class="my-editor h-fit text-[12px] m-auto p-4 py-6 border-2 border-[#1E2D3D] bg-[#011221] rounded-2xl"
+      v-model="codeState"
+      :highlight="highlighter"
+      line-numbers
+      readonly="true"
+    >
+    </prism-editor>
+
+    <p
+      ref="detailBoxRef"
+      :style="{
+        maxHeight: detailsOpen ? '200px' : '0',
+        color: flashTextState ? 'white' : '',
+        textDecoration: flashTextState ? 'underline #ffffff99' : '#ffffff25',
+      }"
+      class="text-[#607B96] overflow-hidden transition-all duration-700"
+    >
+      /* {{ details }} */
+    </p>
+  </div>
+</template>

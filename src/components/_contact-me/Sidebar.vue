@@ -1,0 +1,66 @@
+<script setup>
+import ArrowDownVue from "../Icons/ArrowDown.vue";
+import EmailIconVue from "../Icons/EmailIcon.vue";
+import PhoneIcon from "../Icons/PhoneIcon.vue";
+import OpenInWindowIcon from "../Icons/OpenInWindowIcon.vue";
+</script>
+
+<template>
+  <div class="w-[250px] h-full flex flex-col border-r-[1px] border-[#1E2D3D]">
+    <!--  -->
+    <h1
+      class="flex gap-2 items-center px-4 py-1 border-b-[1px] border-[#1E2D3D]"
+    >
+      <ArrowDownVue /> contacts
+    </h1>
+    <!--  -->
+    <div class="flex flex-col gap-2 py-4 px-3">
+      <a
+        href="/"
+        class="flex gap-1 items-start text-[#607B96] px-1 hover:text-white transition-all duration-400"
+      >
+        <EmailIconVue class="mt-1" />
+        muhammadking09<br />@gmail.com
+      </a>
+      <a
+        href="/"
+        class="flex gap-1 items-start text-[#607B96] px-1 hover:text-white transition-all duration-400"
+      >
+        <PhoneIcon />
+        +92 325 682 3910
+      </a>
+    </div>
+
+    <!-- find me also in -->
+
+    <h1
+      class="flex gap-2 items-center px-4 py-1 border-y-[1px] border-[#1E2D3D]"
+    >
+      <ArrowDownVue /> find-me-also-in
+    </h1>
+
+    <div class="flex flex-col gap-2 py-4 px-3">
+      <a
+        href="/"
+        class="flex gap-1 items-end text-[#607B96] px-1 hover:text-white transition-all duration-400"
+      >
+        <OpenInWindowIcon class="mt-1 mr-1 text-2xl" />
+        Instagram Account
+      </a>
+      <a
+        href="/"
+        class="flex gap-1 items-end text-[#607B96] px-1 hover:text-white transition-all duration-400"
+      >
+        <OpenInWindowIcon class="mt-1 mr-1 text-2xl" />
+        Twitter Account
+      </a>
+      <a
+        href="/"
+        class="flex gap-1 items-end text-[#607B96] px-1 hover:text-white transition-all duration-400"
+      >
+        <OpenInWindowIcon class="mt-1 mr-1 text-2xl" />
+        Discord Account
+      </a>
+    </div>
+  </div>
+</template>
