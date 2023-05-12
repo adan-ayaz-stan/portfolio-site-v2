@@ -6,7 +6,6 @@ import "vue-prism-editor/dist/prismeditor.min.css";
 import { highlight, languages } from "prismjs/components/prism-core";
 import "prismjs/components/prism-clike";
 import "prismjs/components/prism-javascript";
-import "prismjs/themes/prism-coldark-dark.css";
 
 const name = ref("");
 const email = ref("");
@@ -69,21 +68,28 @@ button.addEventListener('click', () => {
         <div
           class="absolute top-0 left-0 w-full h-full flex overflow-y-auto py-12 px-8"
         >
-          <form class="w-2/3 flex flex-col m-auto">
+          <form
+            method="post"
+            action="https://formspree.io/f/xayzkewr"
+            class="w-2/3 flex flex-col m-auto"
+          >
             <label class="text-[#607B96] mb-1">_name:</label>
             <input
+              name="name"
               type="text"
               v-model="name"
               class="mb-6 px-2 py-1 text-[#465E77] bg-[#011221] rounded-lg border-[#1E2D3D] border-[1px] outline-none"
             />
             <label class="text-[#607B96] mb-1">_email:</label>
             <input
+              name="email"
               type="email"
               v-model="email"
               class="mb-6 px-2 py-1 text-[#465E77] bg-[#011221] rounded-lg border-[#1E2D3D] border-[1px] outline-none"
             />
             <label class="text-[#607B96] mb-1">_message:</label>
             <textarea
+              name="message"
               type="text"
               rows="7"
               v-model="message"

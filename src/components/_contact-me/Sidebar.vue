@@ -41,21 +41,21 @@ import OpenInWindowIcon from "../Icons/OpenInWindowIcon.vue";
 
     <div class="flex flex-col gap-2 py-4 px-3">
       <a
-        href="/"
+        href="https://instagram.com/adan_ayaz"
         class="flex gap-1 items-end text-[#607B96] px-1 hover:text-white transition-all duration-400"
       >
         <OpenInWindowIcon class="mt-1 mr-1 text-2xl" />
         Instagram Account
       </a>
       <a
-        href="/"
+        href="https://twitter.com/AdanAyaz1"
         class="flex gap-1 items-end text-[#607B96] px-1 hover:text-white transition-all duration-400"
       >
         <OpenInWindowIcon class="mt-1 mr-1 text-2xl" />
         Twitter Account
       </a>
       <a
-        href="/"
+        href="https://discord.com/users/AdanAyaz#3815"
         class="flex gap-1 items-end text-[#607B96] px-1 hover:text-white transition-all duration-400"
       >
         <OpenInWindowIcon class="mt-1 mr-1 text-2xl" />
