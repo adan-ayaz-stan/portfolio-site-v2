@@ -2,7 +2,6 @@
 import { ref, watch } from "vue";
 import ProjectCard from "./ProjectCard.vue";
 import { useProjectsStore } from "../../stores/projectsStore";
-
 import CloseIcon from "../Icons/CloseIcon.vue";
 
 import data from "./data/projects-data";
@@ -10,6 +9,7 @@ import data from "./data/projects-data";
 const projectsStore = useProjectsStore();
 
 const projectsToRender = ref(data);
+const showMessage = ref(false);
 
 watch(projectsStore, () => {
   // If no filters, then show all projects
@@ -21,6 +21,14 @@ watch(projectsStore, () => {
   return (projectsToRender.value = data.filter((project) => {
     return projectsStore.filters.includes(project.technology);
   }));
+});
+
+watch(projectsToRender, () => {
+  if (projectsToRender.value.length == 0) {
+    showMessage.value = true;
+  } else {
+    showMessage.value = false;
+  }
 });
 </script>
 
@@ -43,6 +51,35 @@ watch(projectsStore, () => {
         </p>
       </div>
       <div class="grid grid-cols-3 auto-rows-fr gap-16">
+        <Transition name="fade">
+          <div
+            v-if="showMessage"
+            class="absolute top-0 left-0 translate-y-1/4 w-full flex flex-col items-center justify-center gap-4 text-center text-[#607B96] z-[-5]"
+          >
+            <img
+              src="https://cdn.svgator.com/images/2022/01/404-page-animation-example.gif"
+              alt="not-found-gif"
+              class="h-52 w-52 object-cover rounded-full mb-4"
+            />
+            <p>
+              Ah, dang! Maybe the project I made with this stack was most likely
+              for my own narrow scoped use
+            </p>
+            <p>OR</p>
+            <p>
+              I learned the tech stack and didn't make a presentable project
+              with it yet <br />
+              (I have yet to make even one presentable project, such a Chad I
+              am).
+            </p>
+            <p>BUT</p>
+            <p>
+              You can give me awesome suggestions and I'll make them for YOU and
+              ME <br />
+              (they are gonna go in my showcase, hehe).
+            </p>
+          </div>
+        </Transition>
         <!-- Card -->
         <TransitionGroup name="list">
           <ProjectCard
@@ -73,5 +110,16 @@ watch(projectsStore, () => {
 .list-leave-active {
   position: absolute;
   max-width: 325px;
+}
+
+/* Fade Animation */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.4s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>
