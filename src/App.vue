@@ -1,6 +1,7 @@
 <script setup>
 import { ref, onMounted } from "vue";
 import NavigationBar from "./components/NavigationBar.vue";
+import NavigationBarMobile from "./components/NavigationBarMobile.vue";
 import HeroSection from "./components/_hello/HeroSection.vue";
 import AboutSection from "./components/_about-me/AboutSection.vue";
 import FooterBar from "./components/FooterBar.vue";
@@ -13,8 +14,9 @@ const navStore = useNavStore();
 </script>
 
 <template>
-  <div class="min-h-screen h-screen max-h-screen w-full flex flex-col">
+  <div class="min-h-screen h-screen lg:max-h-screen w-full flex flex-col">
     <NavigationBar />
+    <NavigationBarMobile />
 
     <Transition name="fade" mode="out-in" appear @after-leave="onAfterLeave">
       <template v-if="navStore.activeElement == '_hello'">

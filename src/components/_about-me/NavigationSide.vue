@@ -17,7 +17,7 @@ const aboutMeStore = useAboutMeStore();
 
 <template>
   <div
-    class="min-w-[250px] h-full flex flex-row border-solid border-[#1e2d3d] border-r-[1px]"
+    class="hidden lg:flex min-w-[250px] h-full flex-row border-solid border-[#1e2d3d] border-r-[1px]"
   >
     <!-- Icons Bar on the left side -->
     <div

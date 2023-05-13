@@ -61,19 +61,25 @@ button.addEventListener('click', () => {
 </script>
 
 <template>
-  <div class="h-full w-full flex">
+  <div class="h-full w-full flex flex-col lg:flex-row">
     <sidebar-contact-vue />
-    <div class="h-full w-full grid grid-cols-8">
+    <div class="h-full w-full grid grid-cols-8 auto-rows-auto">
       <!-- Left Side -->
-      <div class="col-span-4 relative border-[#1E2D3D] border-r-[1px]">
+      <div
+        class="col-span-8 lg:col-span-4 relative border-[#1E2D3D] border-r-[1px]"
+      >
         <div
-          class="absolute top-0 left-0 w-full h-full flex overflow-y-auto py-12 px-8"
+          class="lg:absolute top-0 left-0 w-full h-full flex overflow-y-auto py-12 px-2 lg:px-8"
         >
           <form
             method="post"
             action="https://formspree.io/f/xayzkewr"
             class="w-2/3 flex flex-col m-auto"
           >
+            <h1 class="lg:hidden text-2xl text-center mb-6">
+              Write me a message
+            </h1>
+
             <label class="text-[#607B96] mb-1">_name:</label>
             <input
               name="name"
@@ -107,7 +113,7 @@ button.addEventListener('click', () => {
       </div>
 
       <!-- Right Side -->
-      <div class="col-span-4 relative">
+      <div class="hidden lg:block col-span-4 relative">
         <div
           class="absolute top-0 left-0 flex px-16 py-8 w-full h-full overflow-y-auto line-numbers"
         >

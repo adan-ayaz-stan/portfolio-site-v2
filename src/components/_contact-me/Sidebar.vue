@@ -6,7 +6,9 @@ import OpenInWindowIcon from "../Icons/OpenInWindowIcon.vue";
 </script>
 
 <template>
-  <div class="w-[250px] h-full flex flex-col border-r-[1px] border-[#1E2D3D]">
+  <div
+    class="w-full lg:w-[250px] h-full flex flex-col border-r-[1px] border-[#1E2D3D]"
+  >
     <!--  -->
     <h1
       class="flex gap-2 items-center px-4 py-1 border-b-[1px] border-[#1E2D3D]"

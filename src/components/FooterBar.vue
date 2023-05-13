@@ -6,7 +6,7 @@ import GithubIcon from "./Icons/GithubIcon.vue";
 
 <template>
   <ul
-    class="w-full mt-auto flex flex-row items-center text-[#607B96] border-solid border-[#1e2d3d] border-t-[1px] bg-[#011627]"
+    class="hidden w-full mt-auto lg:flex flex-row items-center text-[#607B96] border-solid border-[#1e2d3d] border-t-[1px] bg-[#011627]"
   >
     <li class="px-6 py-4 border-solid border-[#1e2d3d] border-r-[1px]">
       find me in

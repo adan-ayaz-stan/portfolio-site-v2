@@ -29,7 +29,7 @@ function setElementActive(element) {
 
 <template>
   <ul
-    class="relative flex flex-row text-[#607B96] border-solid border-[#1e2d3d] border-b-[1px]"
+    class="relative hidden lg:flex flex-row text-[#607B96] border-solid border-[#1e2d3d] border-b-[1px]"
     style="font-family: 'Fira Code' monospace"
   >
     <div

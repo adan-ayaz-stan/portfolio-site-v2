@@ -4,32 +4,91 @@ import GameSection from "./GameSection.vue";
 
 <template>
   <div
-    class="h-full w-screen grid grid-cols-1 lg:grid-cols-2 items-center justify-center gap-4 px-[15%] py-12"
+    class="h-full w-screen max-w-screen grid grid-cols-1 lg:grid-cols-2 items-center justify-center gap-4 px-5 lg:px-[15%] py-12 overflow-x-hidden"
   >
     <!-- Text Section -->
-    <div class="flex flex-col items-center lg:items-start">
+    <div class="relative h-5/6 lg:h-fit flex flex-col items-start">
+      <div
+        class="lg:hidden absolute top-0 left-0 h-[20em] w-[20em] border-2 z-[-10] blur-2xl"
+      >
+        <div
+          style="
+            clip-path: polygon(
+              0% 15%,
+              35% 41%,
+              15% 0%,
+              85% 0%,
+              68% 29%,
+              100% 15%,
+              100% 85%,
+              67% 68%,
+              85% 100%,
+              15% 100%,
+              27% 68%,
+              0% 85%
+            );
+          "
+          class="h-[90%] w-[90%] flex items-center justify-center bg-gradient-to-br from-[#4D5BCE] to-[#43D9AD] opacity-60 z-10"
+        />
+      </div>
+      <div
+        class="lg:hidden absolute bottom-0 right-0 h-[20em] w-[20em] border-2 z-[-10] blur-2xl"
+      >
+        <div
+          style="
+            clip-path: polygon(
+              0% 15%,
+              35% 41%,
+              15% 0%,
+              85% 0%,
+              68% 29%,
+              100% 15%,
+              100% 85%,
+              67% 68%,
+              85% 100%,
+              15% 100%,
+              27% 68%,
+              0% 85%
+            );
+          "
+          class="h-[90%] w-[90%] flex items-center justify-center bg-gradient-to-br from-[#43D9AD] to-[#4D5BCE] opacity-40 rotate-45"
+        />
+      </div>
+
       <p class="text-xl">Hi all. I am</p>
-      <h1 class="text-[4em] text-center lg:text-left leading-tight">
+      <h1 class="text-[3em] lg:text-[4em] text-left leading-tight">
         Adan Ayaz
       </h1>
-      <h3 class="text-[2em] text-blue-600">> Full Stack Developer</h3>
+      <h3
+        class="text-left text-[1.50em] whitespace-nowrap md:text-[2em] text-[#43D9AD] lg:text-[#4D5BCE]"
+      >
+        > Full Stack Developer
+      </h3>
 
-      <p class="mt-12 text-gray-500">// complete the game to continue</p>
-      <p class="text-gray-500">// you can also see it on my github page</p>
+      <p class="hidden lg:block mt-12 text-gray-500">
+        // complete the game to continue
+      </p>
+      <p class="hidden lg:block text-gray-500">
+        // you can also see it on my github page
+      </p>
 
-      <p class="flex gap-3 mt-2">
-        <span class="text-blue-600">const</span
-        ><span class="text-green-400">githubLink</span>=<a
+      <p class="lg:hidden text-gray-500 mt-auto">
+        // find my profile on Github:
+      </p>
+      <p class="flex flex-col md:flex-row gap-2 md:gap-3 mt-2">
+        <span class="text-green-400"
+          ><span class="text-blue-600">const</span> githubLink =</span
+        ><a
           href="https://github.com/adan-ayaz-stan"
           target="_blank"
-          class="text-yellow-600"
+          class="text-yellow-600 underline lg:no-underline"
           >"https://github.com/adan-ayaz-stan"</a
         >
       </p>
     </div>
 
     <!-- Game Section -->
-    <div class="relative h-full flex items-center justify-center">
+    <div class="relative hidden h-full lg:flex items-center justify-center">
       <div
         class="absolute top-0 left-0 h-[20em] w-[20em] border-2 z-[-10] blur-2xl"
       >

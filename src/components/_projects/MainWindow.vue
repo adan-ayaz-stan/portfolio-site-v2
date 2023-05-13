@@ -34,9 +34,10 @@ watch(projectsToRender, () => {
 
 <template>
   <div class="relative h-full w-full overflow-y-auto">
-    <div class="absolute top-0 left-0 w-full h-fit px-20 py-28">
+    <div class="absolute top-0 left-0 w-full h-fit px-6 lg:px-20 py-8 lg:py-28">
+      <!-- Top Bar where filters applied show up -->
       <div
-        class="min-h-[29px] absolute top-0 left-0 w-full flex flex-row py-1 border-b-[1.5px] border-[#1E2D3D]"
+        class="min-h-[29px] hidden absolute top-0 left-0 w-full lg:flex flex-row py-1 border-b-[1.5px] border-[#1E2D3D]"
       >
         <p
           v-if="projectsStore.filters.length != 0"
@@ -50,11 +51,13 @@ watch(projectsToRender, () => {
           </span>
         </p>
       </div>
-      <div class="grid grid-cols-3 auto-rows-fr gap-16">
+
+      <!--  -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 auto-rows-fr gap-6 lg:gap-16">
         <Transition name="fade">
           <div
             v-if="showMessage"
-            class="absolute top-0 left-0 translate-y-1/4 w-full flex flex-col items-center justify-center gap-4 text-center text-[#607B96] z-[-5]"
+            class="absolute top-0 left-0 translate-y-[50px] lg:translate-y-1/4 w-full px-4 py-4 flex flex-col items-center justify-center gap-4 text-center text-[#607B96] z-[-5]"
           >
             <img
               src="https://cdn.svgator.com/images/2022/01/404-page-animation-example.gif"

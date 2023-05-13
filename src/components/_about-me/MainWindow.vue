@@ -61,7 +61,7 @@ onBeforeMount(() => {
 </script>
 
 <template>
-  <div class="w-full grid grid-cols-8">
+  <div class="w-full hidden lg:grid grid-cols-8">
     <div
       class="relative col-span-4 text-lg text-[#607B96] border-solid border-[#1e2d3d] border-r-[1px]"
     >

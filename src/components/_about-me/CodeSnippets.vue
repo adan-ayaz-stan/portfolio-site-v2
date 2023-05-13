@@ -143,10 +143,10 @@ function scrollToDetails(detailBoxRef, index) {
 </script>
 
 <template>
-  <div class="relative col-span-4 flex flex-col px-3 py-4">
+  <div class="relative lg:col-span-4 flex flex-col lg:px-3 py-4">
     <div
       ref="divRef"
-      class="w-full h-full absolute top-0 left-0 overflow-y-auto pt-6 pb-12"
+      class="w-full h-full lg:absolute top-0 left-0 overflow-y-auto pt-6 pb-12"
     >
       <p class="text-[#607B96] pl-6">// Code snippets showcase:</p>
 

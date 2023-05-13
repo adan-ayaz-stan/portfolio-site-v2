@@ -65,14 +65,14 @@ const components = {
 </script>
 
 <template>
-  <div class="flex flex-col gap-8 mx-12">
+  <div class="flex flex-col gap-8 mx-4 lg:mx-12">
     <!-- Top Bar -->
     <div class="flex flex-row justify-between items-end mt-12">
       <div class="flex flex-row gap-3 items-end">
         <img
           src="https://i.ibb.co/N62Vx41/IMG-20230109-183541.jpg"
           alt="profile-icon"
-          class="h-16 w-16 rounded-full border-2 object-cover"
+          class="h-12 lg:h-16 w-12 lg:w-16 rounded-full border-2 object-cover"
         />
         <div>
           <a
@@ -80,7 +80,7 @@ const components = {
             class="font-bold text-[#5565E8]"
             >@adan-ayaz-stan</a
           >
-          <p class="text-[#607B96]">Created a few months ago</p>
+          <p class="hidden lg:block text-[#607B96]">Created a few months ago</p>
         </div>
       </div>
       <div class="flex flex-row gap-6 text-[#607B96]">

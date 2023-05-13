@@ -10,6 +10,7 @@ import NextJsIcon from "../Icons/NextJsIcon.svg";
 import NuxtIcon from "../Icons/NuxtIcon.svg";
 import NestIcon from "../Icons/NestIcon.svg";
 import PythonIcon from "../Icons/PythonIcon.svg";
+import { ref, onMounted } from "vue";
 
 const data = [
   {
@@ -53,17 +54,34 @@ const data = [
     id: "_python",
   },
 ];
+
+const isOpenFilters = ref(false);
+
+onMounted(() => {
+  if (window.innerWidth > 1020) {
+    isOpenFilters.value = true;
+  }
+});
 </script>
 
 <template>
-  <div class="w-[250px] h-full border-r-[1px] border-[#1E2D3D]">
+  <div
+    class="lg:w-[250px] h-fit lg:h-full border-b-[1px] lg:border-r-[1px] border-[#1E2D3D]"
+  >
     <h1
-      class="flex gap-2 items-center px-8 py-1 border-b-[1px] border-[#1E2D3D]"
+      @click="isOpenFilters = !isOpenFilters"
+      class="flex gap-2 items-center px-8 py-1 border-b-[1px] border-[#1E2D3D] bg-[#1E2D3D] lg:bg-[#011627]"
     >
       <ArrowDown /> projects
     </h1>
 
-    <ul class="flex flex-col gap-1 px-8 py-4">
+    <ul
+      :style="{
+        maxHeight: isOpenFilters ? '500px' : '0px',
+        padding: isOpenFilters ? '8px 16px' : '0px 0px',
+      }"
+      class="flex flex-col gap-1 overflow-y-hidden transition-all duration-400"
+    >
       <li
         v-for="ele in data"
         class="flex flex-row items-center gap-4 text-[#607B96]"
