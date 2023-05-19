@@ -59,14 +59,14 @@ const data = [
     img: "https://i.ibb.co/WcFc25V/index2.png",
   },
   {
-    id: 5000,
+    id: 6000,
     title: "Project 6",
     theme: "agency-website",
     technology: "NextJS",
     desc: "An agency website built with NextJS and Framer Motion.",
     link: "/",
     icon: NextJsIcon,
-    img: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwallpaperaccess.com%2Fblack-abstract-design-hd&psig=AOvVaw154P19n9BdNmafK4sQi2Ch&ust=1684605751772000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCOD_uM77gf8CFQAAAAAdAAAAABAE",
+    img: "https://i.ibb.co/NZ7skxR/image.png",
   },
 ];
 
