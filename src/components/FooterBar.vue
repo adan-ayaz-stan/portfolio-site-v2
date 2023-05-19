@@ -2,6 +2,10 @@
 import TwitterIcon from "./Icons/TwitterIcon.vue";
 import InstagramIcon from "./Icons/InstagramIcon.vue";
 import GithubIcon from "./Icons/GithubIcon.vue";
+
+/*******************************************************
+ * THIS COMPONENT IS PRETTY SELF-EXPLANATORY ISN'T IT? *
+ *******************************************************/
 </script>
 
 <template>

@@ -1,16 +1,27 @@
 <script setup>
-import { useMotion } from "@vueuse/motion";
-import { ref, computed, watch } from "vue";
+import { ref } from "vue";
 import { useGameStore } from "../stores/gameStore";
 import { useNavStore } from "../stores/navStore";
 
+/****************************
+ * IMPORT STORES FROM PINIA *
+ ****************************/
+
 const gameStore = useGameStore();
 const navStore = useNavStore();
+
+/*************************************
+ * INITIAL POSITION OF THE UNDERLINE IN TH NAVBAR *
+ *************************************/
 
 const activeBar = ref({
   width: 93,
   posY: 250,
 });
+
+/****************************************************
+ * SETTING THE POSITION OF THE UNDERLINE UPON HOVER *
+ ****************************************************/
 
 function elementHovered(s) {
   activeBar.value = { width: s.target.offsetWidth, posY: s.target.offsetLeft };
@@ -22,6 +33,11 @@ function hoverLeave(e) {
     posY: activeEle.offsetLeft,
   };
 }
+
+/****************************************
+ * THIS FUNCTION CHANGES THE NAVIGATION *
+ ****************************************/
+
 function setElementActive(element) {
   navStore.setActiveElement(element);
 }
@@ -32,6 +48,7 @@ function setElementActive(element) {
     class="relative hidden lg:flex flex-row text-[#607B96] border-solid border-[#1e2d3d] border-b-[1px]"
     style="font-family: 'Fira Code' monospace"
   >
+    <!--  -->
     <div
       :style="{ width: `${activeBar.width}px`, left: `${activeBar.posY}px` }"
       class="absolute bottom-0 min-w-[0px] h-[2px] bg-[#fea55f] transition-all duration-500 whitespace-nowrap"

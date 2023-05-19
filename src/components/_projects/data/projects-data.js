@@ -58,6 +58,16 @@ const data = [
     icon: VueIcon,
     img: "https://i.ibb.co/WcFc25V/index2.png",
   },
+  {
+    id: 5000,
+    title: "Project 6",
+    theme: "agency-website",
+    technology: "NextJS",
+    desc: "An agency website built with NextJS and Framer Motion.",
+    link: "/",
+    icon: NextJsIcon,
+    img: "https://i.ibb.co/WcFc25V/index2.png",
+  },
 ];
 
 export default data;

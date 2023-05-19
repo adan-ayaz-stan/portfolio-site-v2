@@ -8,6 +8,10 @@ import { useNavStore } from "../stores/navStore";
 const isMenuOpen = ref(false);
 const navStore = useNavStore();
 
+/*****************************************
+ * CHANGES THE NAVIGATION/SECTION CURRENTLY OPEN *
+ *****************************************/
+
 function changeRoute(element) {
   navStore.setActiveElement(element);
   isMenuOpen.value = false;
