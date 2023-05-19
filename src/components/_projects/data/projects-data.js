@@ -66,7 +66,7 @@ const data = [
     desc: "An agency website built with NextJS and Framer Motion.",
     link: "/",
     icon: NextJsIcon,
-    img: "https://i.ibb.co/WcFc25V/index2.png",
+    img: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwallpaperaccess.com%2Fblack-abstract-design-hd&psig=AOvVaw154P19n9BdNmafK4sQi2Ch&ust=1684605751772000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCOD_uM77gf8CFQAAAAAdAAAAABAE",
   },
 ];
 
