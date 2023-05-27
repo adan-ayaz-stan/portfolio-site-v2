@@ -130,7 +130,7 @@ function skipGame() {
 
       <button
         @click="skipGame"
-        class="w-fit ml-auto mt-auto p-2 border-2 rounded-lg"
+        class="w-fit ml-auto mt-auto p-2 text-black font-semibold rounded-lg bg-[#A5FECB]"
       >
         skip
       </button>

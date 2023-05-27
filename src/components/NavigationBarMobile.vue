@@ -37,11 +37,7 @@ function changeRoute(element) {
 
     <!-- The Opened Menu -->
     <div
-      :style="{
-        clipPath: isMenuOpen
-          ? 'polygon(0 0, 100% 0, 100% 100%, 0 100%)'
-          : 'polygon(0 0, 100% 0, 100% 0, 0 0)',
-      }"
+      v-if="isMenuOpen"
       class="absolute top-0 left-0 w-full h-screen flex flex-col bg-[#011627] z-10 transition-all duration-400 ease-out"
     >
       <div
