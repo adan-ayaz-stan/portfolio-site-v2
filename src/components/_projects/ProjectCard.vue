@@ -13,11 +13,14 @@ const { data, index } = defineProps(["data", "index"]);
     <!-- Card Body -->
     <div class="relative flex flex-col rounded-xl">
       <!-- Card Icon -->
-      <img
-        :src="data.icon"
-        :alt="data.technology + '_icon'"
-        class="w-8 h-8 absolute top-[10px] right-[10px]"
-      />
+      <div class="flex flex-row gap-2 absolute top-[10px] right-[10px]">
+        <img
+          v-for="ele in data.technologies"
+          :src="ele.icon"
+          :alt="ele.title + '_icon'"
+          class="w-8 h-8"
+        />
+      </div>
 
       <!-- Card Image -->
       <img

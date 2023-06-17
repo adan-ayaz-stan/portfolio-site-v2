@@ -14,7 +14,9 @@ const navStore = useNavStore();
 </script>
 
 <template>
-  <div class="min-h-screen h-screen lg:max-h-screen w-full flex flex-col">
+  <div
+    class="min-h-screen h-screen lg:max-h-screen lg:max-w-screen w-full flex flex-col overflow-hidden"
+  >
     <NavigationBar />
     <NavigationBarMobile />
 
@@ -42,12 +44,23 @@ const navStore = useNavStore();
 .fade-enter-active,
 .fade-leave-active {
   transform: scale(1);
-  transition: all 0.6s ease-in-out 0.4s;
+  transition: all 1.5s ease-in-out;
 }
 
-.fade-enter-from,
+@media only screen and (max-width: 980px) {
+  .fade-enter-active,
+  .fade-leave-active {
+    transform: scale(1);
+    transition: all 0.7s ease-in-out;
+  }
+}
+
+.fade-enter-from {
+  transform: translateX(100%) scale(0.85);
+  opacity: 0;
+}
 .fade-leave-to {
-  transform: scale(0.85);
+  transform: translateX(-100%) scale(0.85);
   opacity: 0;
 }
 </style>

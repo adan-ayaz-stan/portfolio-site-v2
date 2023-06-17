@@ -100,14 +100,18 @@ const components = {
     </div>
 
     <!-- Code Section -->
-    <prism-editor
-      class="my-editor h-fit text-[12px] m-auto p-4 py-6 border-2 border-[#1E2D3D] bg-[#011221] rounded-2xl"
-      v-model="codeState"
-      :highlight="highlighter"
-      line-numbers
-      readonly="true"
+    <div
+      class="overflow-x-auto border-2 border-[#1E2D3D] bg-[#011221] rounded-2xl"
     >
-    </prism-editor>
+      <prism-editor
+        class="my-editor min-w-[500px] h-fit text-[12px] m-auto p-4 py-6"
+        v-model="codeState"
+        :highlight="highlighter"
+        line-numbers
+        readonly="true"
+      >
+      </prism-editor>
+    </div>
 
     <p
       ref="detailBoxRef"

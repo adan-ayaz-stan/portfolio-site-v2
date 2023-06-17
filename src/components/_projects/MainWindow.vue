@@ -19,7 +19,13 @@ watch(projectsStore, () => {
 
   // Only those projects that are in the filter
   return (projectsToRender.value = data.filter((project) => {
-    return projectsStore.filters.includes(project.technology);
+    let isProjectIncluded = false;
+    for (let i = 0; i < project.technologies.length; i++) {
+      if (projectsStore.filters.includes(project.technologies[i].title)) {
+        isProjectIncluded = true;
+      }
+    }
+    return isProjectIncluded;
   }));
 });
 

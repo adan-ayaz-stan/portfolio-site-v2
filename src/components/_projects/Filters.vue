@@ -70,9 +70,13 @@ onMounted(() => {
   >
     <h1
       @click="isOpenFilters = !isOpenFilters"
-      class="flex gap-2 items-center px-8 py-1 border-b-[1px] border-[#1E2D3D] bg-[#1E2D3D] lg:bg-[#011627]"
+      class="flex gap-2 items-center px-8 py-1 border-b-[1px] border-[#1E2D3D] bg-[#1E2D3D] lg:bg-[#011627] cursor-pointer"
     >
-      <ArrowDown /> projects
+      <ArrowDown
+        :style="!isOpenFilters && { transform: 'rotate(-90deg)' }"
+        class="transition-all duration-400"
+      />
+      projects
     </h1>
 
     <ul
