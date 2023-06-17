@@ -88,7 +88,7 @@ const data = [
       { title: "NextJS", icon: NextJsIcon },
     ],
     desc: "A full-stack light novel web app built atop of NextJS frontend + NextJS Web scraping",
-    link: "https://spitfiresnovelpub.vercel.app",
+    link: "https://spitfirenovelpub.vercel.app",
     img: "https://img.freepik.com/free-photo/colorful-ball-ribbons_71767-142.jpg?t=st=1687028246~exp=1687028846~hmac=95b0d7a5a5bc29ce5c447dfb77fea6cacd6f7ddf4fc532fa2d3a256aeba38b97",
   },
 ];
