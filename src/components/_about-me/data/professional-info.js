@@ -109,7 +109,7 @@ const data = [
           "",
           "Degree: F.Sc (Pre-Medical)",
           "",
-          "CGPA: 4.0",
+          "CGPA: 4.7",
           "",
           "Academic Excellence: Consistently achieved high scores throughout high school career",
           "",
