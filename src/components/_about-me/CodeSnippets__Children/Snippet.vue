@@ -72,7 +72,7 @@ const components = {
         <img
           src="https://i.ibb.co/jMjCjn9/juggernaut.jpg"
           alt="profile-icon"
-          class="h-12 lg:h-16 w-12 lg:w-16 rounded-full border-2 object-cover"
+          class="h-12 lg:h-16 w-12 lg:w-16 rounded-full object-cover"
         />
         <div>
           <a
