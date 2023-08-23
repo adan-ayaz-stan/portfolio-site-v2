@@ -56,11 +56,11 @@ const navStore = useNavStore();
 }
 
 .fade-enter-from {
-  transform: translateX(100%) scale(0.85);
+  transform: scale(0.85);
   opacity: 0;
 }
 .fade-leave-to {
-  transform: translateX(-100%) scale(0.85);
+  transform: scale(0.85);
   opacity: 0;
 }
 </style>

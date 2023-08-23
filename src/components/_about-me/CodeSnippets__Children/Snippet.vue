@@ -70,7 +70,7 @@ const components = {
     <div class="flex flex-row justify-between items-end mt-12">
       <div class="flex flex-row gap-3 items-end">
         <img
-          src="https://i.ibb.co/N62Vx41/IMG-20230109-183541.jpg"
+          src="https://i.ibb.co/jMjCjn9/juggernaut.jpg"
           alt="profile-icon"
           class="h-12 lg:h-16 w-12 lg:w-16 rounded-full border-2 object-cover"
         />
