@@ -24,13 +24,13 @@ import OpenInWindowIcon from "../Icons/OpenInWindowIcon.vue";
         <EmailIconVue class="mt-1" />
         adanayaztracer<br />@gmail.com
       </a>
-      <a
+      {*<a
         href="tel:+923256823910"
         class="flex gap-1 items-start text-[#607B96] px-1 hover:text-white transition-all duration-400"
       >
         <PhoneIcon />
         +92 325 682 3910
-      </a>
+      </a>*}
     </div>
 
     <!-- find me also in -->
