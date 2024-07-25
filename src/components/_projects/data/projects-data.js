@@ -1,11 +1,13 @@
-import ReactIcon from "../../../assets/icons/SkillIconsReactDark.svg";
-import VueIcon from "../../../assets/icons/SkillIconsVuejsDark.svg";
-import HtmlIcon from "../../../assets/icons/DeviconHtml5.svg";
 import CssIcon from "../../../assets/icons/DeviconCss3.svg";
+import GolangIcon from "../../../assets/icons/SkillsIconsGolang.svg";
+import HtmlIcon from "../../../assets/icons/DeviconHtml5.svg";
+import NestIcon from "../../../assets/icons/SkillIconsNestjsDark.svg";
 import NextJsIcon from "../../../assets/icons/LogosNextjsIcon.svg";
 import NuxtIcon from "../../../assets/icons/SkillIconsNuxtjsDark.svg";
-import NestIcon from "../../../assets/icons/SkillIconsNestjsDark.svg";
 import PythonIcon from "../../../assets/icons/SkillIconsPythonDark.svg";
+import ReactIcon from "../../../assets/icons/SkillIconsReactDark.svg";
+import SvelteIcon from "../../../assets/icons/SkillsIconsSvelte.svg";
+import VueIcon from "../../../assets/icons/SkillIconsVuejsDark.svg";
 
 const data = [
   {
@@ -36,6 +38,18 @@ const data = [
   {
     id: 3000,
     title: "Project 3",
+    theme: "_gamebuddies-matchmaker",
+    technologies: [
+      { title: "Golang", icon: GolangIcon },
+      { title: "Svelte", icon: SvelteIcon },
+    ],
+    desc: "A conference-app built on Nuxt, Supabase and tRPC.",
+    link: "https://github.com/adan-ayaz-stan/conference-app-nuxt",
+    img: "https://i.ibb.co/gzLn8GZ/image-5.png",
+  },
+  {
+    id: 4000,
+    title: "Project 4",
     theme: "_chat-app",
     technologies: [
       { title: "Vue", icon: VueIcon },
@@ -46,8 +60,8 @@ const data = [
     img: "https://i.ibb.co/fDcYLCp/OIG.jpg",
   },
   {
-    id: 4000,
-    title: "Project 4",
+    id: 5000,
+    title: "Project 5",
     theme: "_online-store",
     technologies: [
       { title: "React", icon: ReactIcon },
@@ -58,8 +72,8 @@ const data = [
     img: "https://i.ibb.co/tbymZzK/index.png",
   },
   {
-    id: 5000,
-    title: "Project 5",
+    id: 6000,
+    title: "Project 6",
     theme: "_portfolio-site",
     technologies: [{ title: "Vue", icon: VueIcon }],
     desc: "My own portfolio site built on top of Vue as a SPA.",
@@ -67,8 +81,8 @@ const data = [
     img: "https://i.ibb.co/WcFc25V/index2.png",
   },
   {
-    id: 6000,
-    title: "Project 6",
+    id: 7000,
+    title: "Project 7",
     theme: "_agency-website",
     technologies: [
       { title: "React", icon: ReactIcon },
@@ -80,8 +94,8 @@ const data = [
     img: "https://i.ibb.co/NZ7skxR/image.png",
   },
   {
-    id: 7000,
-    title: "Project 7",
+    id: 8000,
+    title: "Project 8",
     theme: "_novel-pub",
     technologies: [
       { title: "React", icon: ReactIcon },
@@ -90,6 +104,18 @@ const data = [
     desc: "A full-stack light novel web app built atop of NextJS frontend + NextJS Web scraping",
     link: "https://spitfirenovelpub.vercel.app",
     img: "https://img.freepik.com/free-photo/colorful-ball-ribbons_71767-142.jpg?t=st=1687028246~exp=1687028846~hmac=95b0d7a5a5bc29ce5c447dfb77fea6cacd6f7ddf4fc532fa2d3a256aeba38b97",
+  },
+  {
+    id: 9000,
+    title: "Project 9",
+    theme: "_drove-drive",
+    technologies: [
+      { title: "React", icon: ReactIcon },
+      { title: "NextJS", icon: NextJsIcon },
+    ],
+    desc: "An agency showcase site with transitions built with NextJS and Framer Motion.",
+    link: "https://drove-animated-site.vercel.app/",
+    img: "https://i.ibb.co/VmTft8Z/scrnli-7-25-2024-1-28-01-PM.png",
   },
 ];
 
