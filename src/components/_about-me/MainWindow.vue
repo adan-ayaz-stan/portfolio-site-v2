@@ -62,20 +62,14 @@ onBeforeMount(() => {
 
 <template>
   <div class="w-full hidden lg:grid grid-cols-8">
-    <div
-      class="relative col-span-4 text-lg text-[#607B96] border-solid border-[#1e2d3d] border-r-[1px]"
-    >
+    <div class="relative col-span-4 text-lg text-[#607B96] border-solid border-[#1e2d3d] border-r-[1px]">
       <!-- The navigation section -->
       <div
-        class="min-h-[29px] files-open-overview w-full max-w-full flex flex-row flex-nowrap overflow-x-auto border-solid border-[#1e2d3d] border-b-[1px] bg-[#011627]"
-      >
-        <h1
-          v-for="ele in aboutMeStore.opened.files"
-          :style="{
-            color: ele.title == aboutMeStore.opened.file ? 'white' : '',
-          }"
-          class="w-fit flex gap-3 items-center text-[14px] p-[1.5px] pl-4 pr-2 border-solid border-[#1e2d3d] border-r-[1px] cursor-pointer"
-        >
+        class="min-h-[29px] files-open-overview w-full max-w-full flex flex-row flex-nowrap overflow-x-auto border-solid border-[#1e2d3d] border-b-[1px] bg-[#011627] z-50">
+        <h1 v-for="ele in aboutMeStore.opened.files" :style="{
+          color: ele.title == aboutMeStore.opened.file ? 'white' : '',
+        }"
+          class="w-fit flex gap-3 items-center text-[14px] p-[1.5px] pl-4 pr-2 border-solid border-[#1e2d3d] border-r-[1px] cursor-pointer whitespace-nowrap">
           <span @click="setActiveFile(ele.title)">
             {{ ele.title }}
           </span>
@@ -88,10 +82,7 @@ onBeforeMount(() => {
       <!-- Active File Window i.e. the file that is currently in view of the user -->
       <ul class="relative active-file-content overflow-y-auto py-4">
         <!-- The content section -->
-        <li
-          v-for="(ele, ind) in activeFile.content"
-          class="grid grid-cols-12 pl-12 pr-4"
-        >
+        <li v-for="(ele, ind) in activeFile.content" class="grid grid-cols-12 pl-12 pr-4">
           <span class="col-span-1">{{ ind + 1 }}</span>
           <span class="col-span-11">
             {{

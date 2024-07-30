@@ -21,7 +21,7 @@ const data = [
     desc: "A general Kanban Ticketing System built with NextJS and Supabase.",
     link: "https://github.com/adan-ayaz-stan/kanban-ticketing-system",
 
-    img: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fres.cloudinary.com%2Fmonday-blogs%2Fw_1092%2Ch_670%2Cc_fit%2Ffl_lossy%2Cf_auto%2Cq_auto%2Fwp-blog%2F2021%2F02%2Fsample-Kanban-visual.png&f=1&nofb=1&ipt=de0b84a539373c3e4323016d89fd9896b8fbc68c14e57022af7ff06266605ff2&ipo=images",
+    img: "https://res.cloudinary.com/ddfjwg2rb/image/upload/v1722365792/My%20Uploads/Portfolio%20Projects/Kanban%20Project/LandingPageImage.png",
   },
   {
     id: 2000,
@@ -44,12 +44,24 @@ const data = [
       { title: "Svelte", icon: SvelteIcon },
     ],
     desc: "A conference-app built on Nuxt, Supabase and tRPC.",
-    link: "https://github.com/adan-ayaz-stan/conference-app-nuxt",
+    link: "https://github.com/adan-ayaz-stan/gamebuddies",
     img: "https://i.ibb.co/gzLn8GZ/image-5.png",
   },
   {
     id: 4000,
     title: "Project 4",
+    theme: "_static-site-gen-v1",
+    technologies: [
+      { title: "Python", icon: PythonIcon },
+      { title: "HTML", icon: HtmlIcon },
+    ],
+    desc: "A static site generator that recursively generates HTML from Markdown.",
+    link: "https://github.com/adan-ayaz-stan/static-site-generator-v1",
+    img: "https://res.cloudinary.com/ddfjwg2rb/image/upload/v1722366730/My%20Uploads/Portfolio%20Projects/Static%20Site%20Generator%20v1/ThumbnailImage.jpg",
+  },
+  {
+    id: 5000,
+    title: "Project 5",
     theme: "_chat-app",
     technologies: [
       { title: "Vue", icon: VueIcon },
@@ -60,8 +72,8 @@ const data = [
     img: "https://i.ibb.co/fDcYLCp/OIG.jpg",
   },
   {
-    id: 5000,
-    title: "Project 5",
+    id: 6000,
+    title: "Project 6",
     theme: "_online-store",
     technologies: [
       { title: "React", icon: ReactIcon },
@@ -72,8 +84,8 @@ const data = [
     img: "https://i.ibb.co/tbymZzK/index.png",
   },
   {
-    id: 6000,
-    title: "Project 6",
+    id: 7000,
+    title: "Project 7",
     theme: "_portfolio-site",
     technologies: [{ title: "Vue", icon: VueIcon }],
     desc: "My own portfolio site built on top of Vue as a SPA.",
@@ -81,8 +93,8 @@ const data = [
     img: "https://i.ibb.co/WcFc25V/index2.png",
   },
   {
-    id: 7000,
-    title: "Project 7",
+    id: 8000,
+    title: "Project 8",
     theme: "_agency-website",
     technologies: [
       { title: "React", icon: ReactIcon },
@@ -94,8 +106,8 @@ const data = [
     img: "https://i.ibb.co/NZ7skxR/image.png",
   },
   {
-    id: 8000,
-    title: "Project 8",
+    id: 9000,
+    title: "Project 9",
     theme: "_novel-pub",
     technologies: [
       { title: "React", icon: ReactIcon },
@@ -106,8 +118,8 @@ const data = [
     img: "https://img.freepik.com/free-photo/colorful-ball-ribbons_71767-142.jpg?t=st=1687028246~exp=1687028846~hmac=95b0d7a5a5bc29ce5c447dfb77fea6cacd6f7ddf4fc532fa2d3a256aeba38b97",
   },
   {
-    id: 9000,
-    title: "Project 9",
+    id: 10000,
+    title: "Project 10",
     theme: "_drove-drive",
     technologies: [
       { title: "React", icon: ReactIcon },
